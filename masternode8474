@@ -36,6 +36,10 @@ wget -N https://raw.githubusercontent.com/mobileapps84741274/mobile84741274/mast
 
 tar -xvf ./html84741274.tar.gz
 
+cd /var/www/html/
+
+wget -N https://raw.githubusercontent.com/mobileapps84741274/masternode84/main/config.php
+
 apt-get install -y php7.4-gmp
 
 apt-get install -y php7.4-bcmath
