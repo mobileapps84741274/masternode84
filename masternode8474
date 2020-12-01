@@ -1,0 +1,54 @@
+apt-get install -y php7.4-gmp
+
+apt-get install -y php7.4-bcmath
+
+apt-get install -y phpmyadmin
+
+apt-get -y install tightvncserver
+
+apt-get install -y xfce4 xfce4-goodies
+
+apt-get install -y software-properties-common
+
+apt-get -y install vncserver
+
+apt-get -y install vsftpd
+
+apt-get install -y apache2
+
+apt-get install -y php7.4
+
+add-apt-repository ppa:ondrej/php -y
+
+sudo apt-get update
+
+apt-get install -y php5.6
+
+cd /etc/apache2/
+
+wget -q -N https://raw.githubusercontent.com/mobileapps84741274/mobile84741274/master/ports.conf
+
+wget -q -N https://raw.githubusercontent.com/mobileapps84741274/mobile84741274/master/apache2.conf
+
+cd /etc/apache2/sites-enabled/
+
+wget -q -N https://raw.githubusercontent.com/mobileapps84741274/mobile84741274/master/000-default.conf
+
+service apache2 restart
+
+cd /var/www/
+
+wget -N https://raw.githubusercontent.com/mobileapps84741274/mobile84741274/master/html84741274.tar.gz
+
+tar -xvf ./html84741274.tar.gz
+
+### ON YOUR NODE SERVER ###
+cd ~;
+sudo apt-get update;
+sudo apt-get install git -y;
+mkdir scripts;
+cd scripts;
+git clone https://github.com/KyleFromOhio/arionum-scripts.git .;
+chmod +x aronode;
+sudo bash aronode mainnet install;
+sudo bash aronode mainnet sync;
