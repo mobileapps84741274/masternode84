@@ -8,7 +8,7 @@ apt-get -y install vsftpd
 
 apt-get install -y apache2
 
-apt-get install -y php7.4
+apt-get install -y php7.3
 
 sudo apt-get update
 
@@ -34,14 +34,12 @@ cd /var/www/html/
 
 wget -N https://raw.githubusercontent.com/mobileapps84741274/masternode84/main/config.php
 
-apt-get install -y php7.4-gmp
+apt-get install -y php7.3-gmp
 
-apt-get install -y php7.4-bcmath
+apt-get install -y php7.3-bcmath
 
-apt-get install -y phpmyadmin
+apt-get install -y php7.3-mbstring
 
-apt-get install -y php7.4-mbstring
-
-apt-get install -y php7.4-mysqli
+apt-get install -y php7.3-mysqli
 
 service apache2 restart
